@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracker - Health Tracker</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <a href="../index.html" class="nav-brand">HealthTracker</a>
+        <nav class="nav-links">
+            <a href="nutrition.html" class="active">Nutrition</a>
+            <a href="progress.html">Progress</a>
+            <a href="bmi.html">BMI Calculator</a>
+            <button id="logout-button">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 id="welcome-message">Track Your Nutrition</h2>
+            <form id="nutrition-form">
+                <input type="text" id="food-item" placeholder="Food Item (e.g., Apple)" required>
+                <div class="form-grid">
+                    <input type="number" id="calories" placeholder="Calories" required>
+                    <input type="number" id="protein" placeholder="Protein (g)">
+                    <input type="number" id="carbs" placeholder="Carbs (g)">
+                    <input type="number" id="fats" placeholder="Fats (g)">
+                </div>
+                <button type="submit">Add Entry</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 HealthTracker. All rights reserved.</p>
+    </footer>
+    
+    <script src="../js/tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --background-color: #f4f6f9;
+    --card-bg-color: #ffffff;
+    --text-color: #333;
+    --light-text-color: #777;
+    --border-color: #e0e0e0;
+    --error-color: #e74c3c;
+    --dark-bg: #2c3e50;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: var(--card-bg-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a, .nav-links .nav-button {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-button.login {
+    border: 2px solid var(--primary-color);
+}
+.nav-button.signup {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.nav-button.signup:hover {
+    color: var(--border-color);
+}
+
+#logout-button {
+    background: var(--error-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--dark-bg);
+    color: #ecf0f1;
+    margin-top: auto;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.card {
+    background: var(--card-bg-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.card h1, .card h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+form input, form button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.form-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error-message {
+    color: var(--error-color);
+    text-align: center;
+    height: 1.2em;
+    font-size: 0.9em;
+}
+
+
+.hero {
+    text-align: center;
+    max-width: 800px;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: var(--dark-bg);
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    color: var(--light-text-color);
+    margin-bottom: 30px;
+}
+.hero .cta-button {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+.hero .cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.progress-table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.progress-table th, .progress-table td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+.progress-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#bmi-result {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+#nav-username {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-right: 15px; 
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.landing-main {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    padding: 80px 5%;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--dark-bg);
+}
+
+.features-section {
+    background-color: var(--background-color);
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.feature-card {
+    background: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.feature-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.feature-card p {
+    color: var(--light-text-color);
+    line-height: 1.6;
+}
+
+.tips-section {
+    background-color: var(--secondary-color);
+}
+.tips-section h2 {
+    color: white;
+}
+.tip-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.tip-card p {
+    font-size: 1.3rem;
+    color: white;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0 0 25px 0;
+}
+#new-tip-button {
+    background: white;
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#new-tip-button:hover {
+    transform: scale(1.05);
+}
+
+.contact-section {
+    background-color: var(--background-color);
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+
+main.landing-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%;
+}

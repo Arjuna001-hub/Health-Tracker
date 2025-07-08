@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTracker - Your Personal Wellness Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">HealthTracker</a>
+        <nav id="nav-links" class="nav-links">
+            <div id="guest-nav">
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html" class="nav-button login">Login</a>
+                <a href="register.html" class="nav-button signup">Sign Up</a>
+            </div>
+            <div id="user-nav" style="display: none;">
+                <span id="nav-username"></span>
+                <a href="app/nutrition.html" class="nav-button signup">Go to App</a>
+            </div>
+        </nav>
+    </header>
+
+   
+    <main class="landing-main">
+        <section class="hero">
+            <h1>Track Your Health, Transform Your Life.</h1>
+            <p>Your all-in-one solution for monitoring nutrition, calculating BMI, and tracking your wellness journey. Take the first step towards a healthier you.</p>
+            <a href="register.html" class="cta-button">Get Started for Free</a>
+        </section>
+    </main>
+
+   
+    <section class="features-section">
+        <div class="container">
+            <h2>Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Nutrition Tracking</h3>
+                    <p>Log your meals effortlessly and monitor calories, protein, carbs, and fats to stay on top of your diet.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Progress Monitoring</h3>
+                    <p>Visualize your journey with detailed history and charts. See how far you've come and stay motivated.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>BMI Calculator</h3>
+                    <p>Quickly calculate your Body Mass Index to understand your weight category and set realistic goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="tips-section">
+        <div class="container">
+            <h2>Daily Health Tips</h2>
+            <div class="tip-card">
+                <p id="health-tip-text">"Drink at least 8 glasses of water a day to stay hydrated and boost your metabolism."</p>
+                <button id="new-tip-button">Get a New Tip</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+            <form class="contact-form" onsubmit="alert('Thank you for your message!'); this.reset(); return false;">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 HealthTracker. All rights reserved.</p>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>

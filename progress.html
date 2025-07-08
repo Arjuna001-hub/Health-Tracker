@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Progress - Health Tracker</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <a href="../index.html" class="nav-brand">HealthTracker</a>
+        <nav class="nav-links">
+            <a href="nutrition.html">Nutrition</a>
+            <a href="progress.html" class="active">Progress</a>
+            <a href="bmi.html">BMI Calculator</a>
+            <button id="logout-button">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card" style="max-width: 900px;">
+            <h2>Your Nutrition History</h2>
+            <table class="progress-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Protein (g)</th>
+                        <th>Carbs (g)</th>
+                        <th>Fats (g)</th>
+                    </tr>
+                </thead>
+                <tbody id="progress-tbody">
+                   
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 HealthTracker. All rights reserved.</p>
+    </footer>
+    
+    <script src="../js/tracker.js"></script>
+</body>
+</html>
